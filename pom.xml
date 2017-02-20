@@ -5,7 +5,7 @@
     <parent>
         <artifactId>light-parent</artifactId>
         <groupId>org.panda_lang</groupId>
-        <version>indev-0.0.1-SNAPSHOT</version>
+        <version>indev-0.0.1</version>
     </parent>
 
     <artifactId>lightmc</artifactId>
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>org.panda_lang</groupId>
             <artifactId>light</artifactId>
-            <version>${light.version}</version>
+            <version>indev-0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -30,6 +30,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>http://maven.elmakers.com/repository/</url>
+        </repository>
+    </repositories>
 
     <build>
         <defaultGoal>clean install</defaultGoal>
